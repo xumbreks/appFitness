@@ -1,6 +1,7 @@
 
 import { ArrowLeft, CheckCircle, Trash } from "@phosphor-icons/react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Training() {
 
@@ -16,9 +17,11 @@ export function Training() {
       <div className="flex justify-center mt-16 font-bold">
         <div className="flex items-center">
           <button type="button">
-            <ArrowLeft size={25} weight="bold" />
+            <Link to='/'>
+              <ArrowLeft size={25} weight="bold" />
+            </Link>
           </button>
-        <h1 className="text-2xl px-12">MEUS TREINOS</h1>
+          <h1 className="text-2xl px-12">MEUS TREINOS</h1>
         </div>
       </div>
       <div className="flex flex-col items-center mt-6 gap-2">

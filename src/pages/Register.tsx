@@ -1,5 +1,6 @@
-import { ArrowLeft, LockKey, User } from "@phosphor-icons/react";
+import { ArrowLeft, Envelope, LockKey, User } from "@phosphor-icons/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Register() {
   return (
@@ -9,7 +10,9 @@ export function Register() {
         <div className="flex justify-center mt-16 font-bold">
           <div className="flex items-center">
             <button type="button">
+              <Link to='/'>
               <ArrowLeft size={25} weight="bold" />
+              </Link>
             </button>
             <h1 className="text-2xl px-16">CADASTRO</h1>
           </div>
@@ -33,7 +36,7 @@ export function Register() {
             placeholder="example@email.com"
           />
           <div className="absolute inset-y-0 pt-5 pr-2 right-0 flex  items-center">
-            <User size={25} className="text-placeIcons" />
+            <Envelope size={25} className="text-placeIcons" />
           </div>
         </div>
         <div className="relative">

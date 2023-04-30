@@ -1,12 +1,15 @@
 import React from "react";
-import {LockKey, User} from '@phosphor-icons/react';
+import { Link } from "react-router-dom";
+
+import Logo from "../assets/Capa.jpeg";
+import {Envelope, LockKey,} from '@phosphor-icons/react';
 
 export function Entrace () {
   return(
     <>
       <div className="flex justify-center mt-9">
         <img
-          src='./src/assets/capa.jpg'
+          src={Logo}
           alt="LogoTipo"
           />
       </div>
@@ -19,7 +22,7 @@ export function Entrace () {
             placeholder="example@email.com"
             />
             <div  className="absolute inset-y-0 pt-5 pr-2 right-0 flex  items-center">
-            <User size={25} className="text-placeIcons"/>
+            <Envelope size={25} className="text-placeIcons"/>
             </div>
         </div>
         <div className="relative">
@@ -41,20 +44,24 @@ export function Entrace () {
         >
           ENTRAR
         </button>
+        <Link to='/register'>
         <button
           className="bg-button w-72 h-10 rounded-md font-semibold"
           type="button"
         >
           CADASTRE-SE
         </button>
+        </Link>
       </div>
       <span className="flex flex-col items-center">
+        <Link to='/recoverPassword'>
         <button
           className="underline mt-6 text-placeIcons"
           type="button"
         >
           esqueci a senha
         </button>
+      </Link>
       </span>
     </>
   )
