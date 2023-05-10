@@ -1,5 +1,5 @@
 
-import { ArrowLeft, CheckCircle, Trash } from "@phosphor-icons/react";
+import { ArrowLeft, CheckCircle, Trash, X } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,7 @@ export function Training() {
             type="text"
           />
         </div>
-        <div className="flex gap-9">
+        <div className="flex">
           <div>
             <p className="text-sm">Séries</p>
             <input
@@ -46,7 +46,8 @@ export function Training() {
               type="number"
             />
           </div>
-          <div>
+           <X size={28} className="mt-7"/>
+          <div className="pr-11">
             <p className="text-sm">Repetições</p>
             <input
               className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md focus:outline-none focus:ring focus:ring-placeIcons"
