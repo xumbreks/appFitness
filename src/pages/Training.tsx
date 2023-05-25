@@ -27,46 +27,47 @@ export function Training() {
       <div className="flex flex-col items-center mt-6 gap-2">
         <div>
           <p className="text-sm">Músculo</p>
-          <input
-            className="bg-input text-sm w-72 h-10 px-2 rounded-md focus:outline-none focus:ring focus:ring-placeIcons"
+          <div
+            className="bg-input text-sm w-72 h-10 px-2 rounded-md 
+            focus:outline-none focus:ring focus:ring-placeIcons"
           />
         </div>
         <div>
           <p className="text-sm">Aparelho</p>
-          <input
-            className="bg-input text-sm w-72 h-10 px-2 rounded-md focus:outline-none focus:ring focus:ring-placeIcons"
-            type="text"
+          <div
+            className="bg-input text-sm w-72 h-10 px-2 rounded-md 
+            focus:outline-none focus:ring focus:ring-placeIcons"
+            
           />
         </div>
         <div className="flex">
           <div>
             <p className="text-sm">Séries</p>
-            <input
-              className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md focus:outline-none focus:ring focus:ring-placeIcons"
-              type="number"
+            <div
+              className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md 
+              focus:outline-none focus:ring focus:ring-placeIcons"
             />
           </div>
            <X size={28} className="mt-7"/>
           <div className="pr-11">
             <p className="text-sm">Repetições</p>
-            <input
-              className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md focus:outline-none focus:ring focus:ring-placeIcons"
-              type="number"
+            <div
+              className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md 
+              focus:outline-none focus:ring focus:ring-placeIcons"
             />
           </div>
           <div>
             <p className="text-sm">Descanso</p>
-            <input
+            <div
               className="bg-input text-sm w-[4.5rem] h-10 px-2 rounded-md 
               focus:outline-none focus:ring focus:ring-placeIcons"
-              type="number"
               placeholder="Seg"
             />
           </div>
         </div>
         <div className="mt-12">
           <p className="text-sm">Observações</p>
-          <textarea
+          <div
             className="bg-input w-72 h-20 p-2 text-sm rounded-md 
             focus:outline-none focus:ring focus:ring-placeIcons resize-none"
           />

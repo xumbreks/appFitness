@@ -14,7 +14,7 @@ export default {
       background: '#111010',
       input: '#212223',
       placeIcons: '#817D7D',
-      button: '#1DB1B1',
+      button: '#1D58B1 ',
       check: '#14CA04',
       trash: '#B11D1D',
       text: '#FFFFFF',
